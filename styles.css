@@ -1,0 +1,79 @@
+.item {
+    width: 100%; 
+}
+/* Styling på bakgrunden där produkterna står. Bredden ska vara fullstor*/
+
+.item > img {
+    margin-right: 20px;
+}
+/* Från klassen item tar den alla <img> och sätter en margin till höger om alla bilder*/
+
+.name {
+    font-size: x-large;
+}
+/* Klassen är namnen på produkterna och gör texterna större*/
+
+.d-flex {
+    flex-direction: column;
+}
+/* En komponent från bootstrap, kontrollerar layout och mellanrum. Flex-direction: colum sätter riktningen och hur objektet flexar och placeras i förhållande till andra. I detta fall vertikalt*/
+
+img {
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+/* Alla bilder som används - eller all användningen av taggen - sätter en höjd och bredd på bilderna och ger en margin på toppen så bilderna ej ligger slickade vid varandra De får varsin box shadow med. */    
+
+.info {
+    margin: 25px 100px 50px 50px;
+}
+/* Kallar på klassen info och ger den en margin på alla fyra sidorna. Denna sätter storleken på själva listan*/
+
+.no-arrows {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+/* Kallar på klassen no-arrows, som finns i inputet. Den ger den en höjd och bredd, sätter texten i center och ger en extra margin ovanför*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Kallar inte på något specifikt i koden. Denna tar däremot bort pilarna/gömmer dem som finns i en input med type=number genom none och 0.*/
+
+.plus {
+    cursor: pointer;
+    font-size: large;
+    padding-left: 10px;
+}
+/* Kallar på klassen plus och gör att när man håller musen över tecknet får muspekaren en annan form. Sätter även storleken och skapar en padding på vänster sida*/
+
+.minus {
+    cursor: pointer;
+    font-size: large;
+}
+/* Kallar på klassen minus, och liknande ovan ändrar den muspekare när man håller den ovan och sätter storlekn till stor*/
+
+.price, .valuta {
+    display: contents;
+}
+/* Hämtar både klassen price och valuta och vill sätta de i linje genom display*/ 
+
+
+#total_row, h1 {
+    font-weight: bold;
+    background-color: rgb(198, 216, 192);
+    color: rgb(72, 99, 62);
+}
+/* Hämtar id från table rowen som innehåller total amount och price och ändrar font-weight och background color. Hämtar även h1 taggen. */
+
+.checkbox {
+    font-style: italic;
+    color: gray;
+}
+/*hämtat classen checkbox och stylat den med italic och grå textfärg*/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Shopping list</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+            <!-- Bootstrap länk-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <!-- Gör det möjligt att använda bootstrap ikoner-->
+        <link rel="stylesheet" href="styles.css">
+        <!-- inkopplad css-fil-->
+    </head>
+    <body>
+        <h1 class="text-center display-4 p-4">Inköpslista</h1>
+        <!-- heading tagg som är stylad med bootstrap-->
+        <div class="container">
+            <!-- classen container är kopplat till bootstrap-->
+            <div class="row">
+                <!-- div med classen row för vår template literal-->
+                <div class="col-8 d-flex flex-wrap" id="list_items"></div>
+                <div class="col-4">
+                    <table class="table" id="inköpslista">
+                        <!-- en table med id inköpslista som hämtas in under funktionen renderShoppingList-->
+                        <thead>
+                            <tr>
+                                <th>Produkt</th>
+                                <th>Antal</th>
+                                <th>Pris</th>
+                            </tr>
+                            <!-- en table row med tre table-headings för produkt, antal och pris-->
+                        </thead>
+                        <tbody></tbody>
+                        <!-- tbody tagg att lägga in celler och rader i -->
+                        
+                        <tr>
+                            <td class="checkbox">
+                                <input type="checkbox" id="checkbox"> Lägg till moms på 25%</input>
+                            </td>
+                            <!-- En checkbox för att kunna beräkna moms. -->
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="summary_button">Summera</button></td>
+                                <!--En knapp med id för att summera den totala summan av alla varor i listan -->
+                        </tr>
+                        <tr id="total_row">
+                            <td class="total">Totalt:</td>
+                            <td id ="summary_amount"></td>
+                            <td id="summary_price"></td>
+                            <td></td>
+                        </tr>
+                        <!--Skapat en table row med tre table dates, en med texten totalt:, en med ID för de summerade antalen produkter och en med ID för det summerade priset -->
+                    </table>
+                </div>
+            </div> 
+        </div>
+        <script src="script.js"></script>
+        <!--Kopplat JS scriptet till html -->
+    </body>
+</html>
